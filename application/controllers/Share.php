@@ -14,7 +14,7 @@ class Share extends CI_Controller {
         $data['header'] = $this->load->view('template/header', NULL, TRUE);
         $data['footer'] = $this->load->view('template/footer', NULL, TRUE);
 
-        $this->load->view('welcome_message', $data);
+        $this->load->view('content/home', $data);
     }
 
     public function list() {
@@ -22,7 +22,7 @@ class Share extends CI_Controller {
         $data['footer'] = $this->load->view('template/footer', NULL, TRUE);
         $data['wish'] = $this->share_model->getAll();
         
-        $this->load->view('wish_list', $data);
+        $this->load->view('content/wish_list', $data);
     }
 
     public function recent() {

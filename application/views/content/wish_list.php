@@ -1,7 +1,7 @@
 <?php echo $header ?>
 
 	<main class="container mt-5 pt-2">
-        <?php $this->load->view('content/list.php') ?>
+        <?php $this->load->view('_parts/list.php') ?>
 	</main>
 
     <div class="fixed-bottom">
