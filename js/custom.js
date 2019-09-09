@@ -1,6 +1,6 @@
 $.ajax({
 	url:
-		"https://newsapi.org/v2/top-headlines?country=id&apiKey=e89fef4307d04b84ab5afff5ad294813",
+		"https://newsapi.org/v2/top-headlines?country=id&apiKey=",
 	type: "GET",
 	dataType: "json",
 	success: function(data) {
@@ -41,7 +41,7 @@ $.ajax({
 
 // set endpoint and your API access key
 endpoint = "live";
-access_key = "a6b2ee79bc0d91d3e270e7bf624410d1";
+access_key = "";
 symbols = "BTC, BCH, BTG, ETH, DASH, DOGE, LTC, XRP, XMR, XLM";
 
 // get the most recent exchange rates via the "live" endpoint:
